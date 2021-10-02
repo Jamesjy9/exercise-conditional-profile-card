@@ -28,7 +28,7 @@ function render(variables = {}) {
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
-  if (variables.name == null) variables.name = "Lucy";
+  if (variables.name == null) variables.name = "James";
   if (variables.lastname == null) variables.lastname = "Nore";
   if (variables.role == null) variables.role = "Web Developer";
   if (variables.city == null) variables.city = "Pudahuel";
@@ -63,9 +63,11 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/87685675_3069211433089648_7865957754781827072_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=eQOHRKpgX6UAX-6nYFQ&_nc_ht=scontent-scl2-1.xx&oh=4e730d19fd84088bb39188518bf573af&oe=617EC63F",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
